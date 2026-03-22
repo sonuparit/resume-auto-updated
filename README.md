@@ -13,7 +13,7 @@ DevOps projects and skills.
 
 ## 👨‍💻 About Me
 
-DevOps enthusiast with hands-on experience in Kubernetes, Terraform,
+DevOps Engineer with more than 1 year of hands-on experience in Kubernetes, Terraform,
 CI/CD pipelines, and cloud-native systems. Passionate about building
 scalable and automated infrastructure.
 
