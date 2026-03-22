@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sonu | DevOps Engineer Resume</title>
     <style>
       @page {
@@ -46,12 +47,6 @@
         border: 2px solid #333;
       }
 
-      .contacts-container {
-        display: flex;
-        justify-content: center;
-        /* font-size: 1rem; */
-      }
-
       h1,
       h2 {
         margin: 0px;
@@ -67,7 +62,6 @@
         margin-top: 15px;
         color: #0082c8;
         border-bottom: 2px solid #0082c8;
-        /* padding-bottom: 5px; */
         font-size: 20px;
       }
 
@@ -97,11 +91,13 @@
         padding-left: 15px;
       }
 
+      .contacts-container {
+        display: flex;
+        justify-content: center;
+      }
+
       .contact {
         margin: 0px auto 10px auto;
-        flex-wrap: wrap;
-        /* min-width: 400px; */
-        line-height: 1.4;
       }
 
       .highlight {
@@ -111,6 +107,7 @@
       .desig-div {
         display: flex;
         justify-content: space-between;
+        gap: 30px;
       }
 
       /* <!--- download button ---> */
@@ -293,7 +290,8 @@
         </div>
         <ul>
           <li>
-            Skilled in Kubernetes, Terraform, and AWS, with hands-on experience building end-to-end CI/CD pipelines.
+            Skilled in Kubernetes, Terraform, and AWS, with hands-on experience
+            building end-to-end CI/CD pipelines.
           </li>
         </ul>
       </div>
@@ -302,17 +300,18 @@
       <h2>Recent Projects</h2>
       <div class="container-formatter">
         <ol>
-
           <!--- 1st project -->
           <li>
             <div class="desig-div">
-              <div class="highlight">IaC provisioning and automated CI/CD pipeline:</div>
+              <div class="highlight">
+                IaC provisioning and automated CI/CD pipeline:
+              </div>
               <div>2026</div>
             </div>
             <ul>
               <li>
-                Provisioned infrastructure and deployed ArgoCD
-                via Helm for GitOps using Terraform
+                Provisioned infrastructure and deployed ArgoCD via Helm for
+                GitOps using Terraform
               </li>
               <li>
                 Integrated GitHub Actions for CI and ECR updates, enabling
@@ -338,11 +337,16 @@
           <!--- last project -->
           <li>
             <div class="desig-div">
-              <div class="highlight">Automated website and resume updation:</div>
+              <div class="highlight">
+                Automated website and resume updation:
+              </div>
               <div>2026</div>
             </div>
             <ul>
-              <li>Implemented auto updation of recent projects in portfolio and resume</li>
+              <li>
+                Implemented auto updation of recent projects in portfolio and
+                resume
+              </li>
             </ul>
           </li>
         </ol>
