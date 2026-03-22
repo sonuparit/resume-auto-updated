@@ -15,6 +15,10 @@
           margin: 0;
         }
 
+        .user-note {
+          display: none !important;
+        }
+
         .floating-download {
           display: none !important;
         }
@@ -45,6 +49,17 @@
         background: white;
         margin: auto;
         border: 2px solid #333;
+      }
+
+      .user-note {
+        max-width: 800px;
+        min-width: 400px;
+        padding: 20px 40px;
+        background: #fffae6;
+        color: #333;
+        border: 2px solid #ffb3b3;
+        border-radius: 8px;
+        margin: 20px auto;
       }
 
       h1,
@@ -153,6 +168,15 @@
     </style>
   </head>
   <body>
+    <!--- note for viewers --->
+    <div class="user-note">
+      <p>
+        This resume is designed for A4 print. If you're viewing it in a mobile
+        browser, it is structured to be easy to read and navigate on mobile devices, but please
+        download the PDF version to see it in actual resume format.
+      </p>
+    </div>
+
     <!--- download button --->
     <a
       href="#"
