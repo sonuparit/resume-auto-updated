@@ -1,414 +1,397 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sonu | DevOps Engineer Resume</title>
-    <style>
-      @page {
-        size: A4;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonu | DevOps Engineer Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body {
         margin: 0;
       }
 
-      @media print {
-        body {
-          margin: 0;
-        }
-
-        .user-note {
-          display: none !important;
-        }
-
-        .floating-download {
-          display: none !important;
-        }
-
-        .resume-container {
-          border: none !important;
-        }
-
-        #resume {
-          width: 210mm;
-          padding: 10mm 18mm 10mm 10mm;
-        }
+      .user-note {
+        display: none !important;
       }
-      body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        line-height: 1.2;
-        color: #333;
+
+      .floating-download {
+        display: none !important;
       }
 
       .resume-container {
-        max-width: 800px;
-        min-width: 400px;
-        padding: 40px;
-        background: white;
-        margin: auto;
-        border: 2px solid #333;
+        border: none !important;
       }
 
-      .user-note {
-        max-width: 800px;
-        min-width: 400px;
-        padding: 20px 40px;
-        background: #fffae6;
-        color: #333;
-        border: 2px solid #ffb3b3;
-        border-radius: 8px;
-        margin: 20px auto 30px auto;
+      #resume {
+        width: 210mm;
+        padding: 10mm 18mm 10mm 10mm;
       }
+    }
 
-      h1,
-      h2 {
-        margin: 0px;
-        padding: 0px;
-      }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.2;
+      color: #333;
+    }
 
-      h1 {
-        font-size: 35px;
-        text-align: center;
-      }
+    .resume-container {
+      max-width: 800px;
+      min-width: 400px;
+      padding: 40px;
+      background: white;
+      margin: auto;
+      border: 2px solid #333;
+    }
 
-      h2 {
-        margin-top: 10px;
-        color: #0082c8;
-        border-bottom: 2px solid #0082c8;
-        font-size: 20px;
-      }
+    .user-note {
+      max-width: 800px;
+      min-width: 400px;
+      padding: 20px 40px;
+      background: #fffae6;
+      color: #333;
+      border: 2px solid #ffb3b3;
+      border-radius: 8px;
+      margin: 20px auto 30px auto;
+    }
 
-      p {
-        margin: 4px 0;
-        text-align: justify;
-      }
+    h1,
+    h2 {
+      margin: 0px;
+      padding: 0px;
+    }
 
-      .container-formatter {
-        margin: 4px 0;
-        text-align: justify;
-      }
+    h1 {
+      font-size: 35px;
+      text-align: center;
+    }
 
-      li {
-        text-align: justify;
-      }
+    h2 {
+      margin-top: 10px;
+      color: #0082c8;
+      border-bottom: 2px solid #0082c8;
+      font-size: 20px;
+    }
 
-      ul {
-        margin-top: 5px;
-        margin-bottom: 10px;
-        padding-left: 30px;
-      }
+    p {
+      margin: 4px 0;
+      text-align: justify;
+    }
 
-      ol {
-        margin-top: 5px;
-        margin-bottom: 10px;
-        padding-left: 15px;
-      }
+    .container-formatter {
+      margin: 4px 0;
+      text-align: justify;
+    }
 
-      .contacts-container {
-        display: flex;
-        justify-content: center;
-      }
+    li {
+      text-align: justify;
+    }
 
-      .contact {
-        margin: 0px auto 10px auto;
-      }
+    ul {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      padding-left: 30px;
+    }
 
-      .highlight {
-        font-weight: bold;
-      }
+    ol {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      padding-left: 15px;
+    }
 
-      .desig-div {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-      }
+    .contacts-container {
+      display: flex;
+      justify-content: center;
+    }
 
-      /* <!--- download button ---> */
-      .floating-download {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
+    .contact {
+      margin: 0px auto 10px auto;
+    }
 
-        display: flex;
-        align-items: center;
-        gap: 8px;
+    .highlight {
+      font-weight: bold;
+    }
 
-        padding: 12px 16px;
-        border-radius: 50px;
+    .desig-div {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
 
-        background: #007ac6;
-        color: white;
-        text-decoration: none;
+    /* <!--- download button ---> */
+    .floating-download {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
 
-        font-weight: 600;
-        font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
 
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      border-radius: 50px;
 
-        z-index: 1000;
-        transition: all 0.25s ease;
+      background: #007ac6;
+      color: white;
+      text-decoration: none;
 
-        cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
 
-        box-shadow: 0 8px 20px rgba(0, 122, 198, 0.4);
-      }
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
-      .download-icon {
-        width: 24px;
-        height: 24px;
-        fill: currentColor;
-      }
+      z-index: 1000;
+      transition: all 0.25s ease;
 
-      .floating-download:hover {
-        transform: translateY(-3px) scale(1.05);
-        background: #005386;
-      }
-    </style>
-  </head>
-  <body>
-    <!--- note for viewers --->
-    <div class="user-note">
-      <p>
-        For pdf version, please click on the "Resume" button at the bottom right
-        corner.
-      </p>
-    </div>
+      cursor: pointer;
 
-    <!--- download button --->
-    <a
-      href="#"
-      onclick="
+      box-shadow: 0 8px 20px rgba(0, 122, 198, 0.4);
+    }
+
+    .download-icon {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    .floating-download:hover {
+      transform: translateY(-3px) scale(1.05);
+      background: #005386;
+    }
+  </style>
+</head>
+
+<body>
+  <!--- note for viewers --->
+  <div class="user-note">
+    <p>
+      For pdf version, please click on the "Resume" button at the bottom right
+      corner.
+    </p>
+  </div>
+
+  <!--- download button --->
+  <a href="#" onclick="
         printResume();
         return false;
-      "
-      class="floating-download"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="download-icon"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"
-        />
-        <path
-          d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
-        />
-      </svg>
-      <span>Resume</span>
-    </a>
+      " class="floating-download">
+    <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" viewBox="0 0 16 16">
+      <path
+        d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+      <path
+        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+    </svg>
+    <span>Resume</span>
+  </a>
 
-    <!--- resume content --->
-    <div class="resume-container" id="resume">
-      <!-- Header with contact info -->
-      <h1>Sonu</h1>
-      <div class="contacts-container">
-        <div class="contact">
-          <a href="tel:+918374485176" class="highlight">+91 8374485176</a>
-          |
-          <a href="mailto:sonu.parit1@gmail.com" class="highlight"
-            >sonu.parit1@gmail.com</a
-          >
-          |
-          <a
-            href="https://linkedin.com/in/sonuparit"
-            target="_blank"
-            class="highlight"
-            >linkedin.com/in/sonuparit</a
-          >
-          |
-          <a
-            href="https://github.com/sonuparit"
-            target="_blank"
-            class="highlight"
-            >github.com/sonuparit</a
-          >
-          |
-          <a
-            href="https://sonuparit.github.io/"
-            target="_blank"
-            class="highlight"
-            >website</a
-          >
-        </div>
+  <!--- resume content --->
+  <div class="resume-container" id="resume">
+    <!-- Header with contact info -->
+    <h1>Sonu</h1>
+    <div class="contacts-container">
+      <div class="contact">
+        <a href="tel:+918374485176" class="highlight">+91 8374485176</a>
+        |
+        <a href="mailto:sonu.parit1@gmail.com" class="highlight">sonu.parit1@gmail.com</a>
+        |
+        <a href="https://linkedin.com/in/sonuparit" target="_blank" class="highlight">linkedin.com/in/sonuparit</a>
+        |
+        <a href="https://github.com/sonuparit" target="_blank" class="highlight">github.com/sonuparit</a>
+        |
+        <a href="https://sonuparit.github.io/" target="_blank" class="highlight">website</a>
       </div>
+    </div>
 
-      <!-- Profile Summary -->
-      <h2>Profile Summary</h2>
-      <p>
-        DevOps Engineer specializing in cloud-native infrastructure (AWS, Kubernetes, Terraform) with hands-on experience in building CI/CD pipelines and GitOps-based deployments. Proven ability to improve system reliability, scalability, and automation through production-focused approach.
-      </p>
+    <!-- Profile Summary -->
+    <h2>Profile Summary</h2>
+    <p>
+      DevOps-focused engineer building production-grade cloud infrastructure using AWS, Kubernetes, and Terraform.
+      Strong focus on reliability, automation, and real-world problem solving including state management, secure secrets
+      handling, and GitOps-based deployments.
+    </p>
 
-      <!-- Key Skills -->
-      <h2>Key Skills</h2>
-      <p>
-        Automation and reliability mindset | IaC for cloud provisioning |
-        Application deployment and orchestration | CI/CD pipeline implementation
-        | Scalable application design and containerization | Programming | Cloud
-        infrastructure management on AWS | Monitoring and observability | Linux
-        administration and troubleshooting
-      </p>
+    <!-- Key Skills -->
+    <h2>Key Skills</h2>
+    <p>
+      Automation and reliability mindset | IaC for cloud provisioning |
+      Application deployment and orchestration | CI/CD pipeline implementation
+      | Scalable application design and containerization | Programming | Cloud
+      infrastructure management on AWS | Monitoring and observability | Linux
+      administration and troubleshooting
+    </p>
 
-      <!-- Tools and Technologies -->
-      <h2>Tools and Technologies</h2>
-      <p>
-        <strong>Programming Languages:</strong> Python, JavaScript, MQL5,
-        VB | <strong>Infrastructure as Code:</strong> Terraform |
-        <strong>Cloud Platforms:</strong> AWS |
-        <strong>Containerization and orchestration:</strong> Docker, Kubernetes
-        | <strong>CI/CD:</strong> Jenkins, GitHub Actions, GitLab, ArgoCD |
-        <strong>Automation:</strong> Bash, Python, VB |
-        <strong>Monitoring:</strong> Prometheus, Grafana |
-        <strong>Operating Systems:</strong> Linux, Windows
-      </p>
+    <!-- Tools and Technologies -->
+    <h2>Tools and Technologies</h2>
+    <p>
+      <strong>Programming Languages:</strong> Python, JavaScript, MQL5,
+      VB | <strong>Infrastructure as Code:</strong> Terraform |
+      <strong>Cloud Platforms:</strong> AWS |
+      <strong>Containerization and orchestration:</strong> Docker, Kubernetes
+      | <strong>CI/CD:</strong> Jenkins, GitHub Actions, GitLab, ArgoCD |
+      <strong>Automation:</strong> Bash, Python, VB |
+      <strong>Monitoring:</strong> Prometheus, Grafana |
+      <strong>Operating Systems:</strong> Linux, Windows
+    </p>
 
-      <!-- Experience -->
-      <h2>Experience</h2>
-      <div class="container-formatter">
-        <div class="desig-div highlight">
-          <div>Indian Army (Aviation Technician)</div>
-          <div>2014-2022</div>
-        </div>
-        <ul>
-          <li>
-            <strong>
-              Implemented instant list generation for critical components to
-              maintain aircraft availability</strong
-            >, saving over 10 hours per day during the <code><strong>Pulwama attack</strong></code>.
-            <strong>Commended by Officer Commanding</strong> for ensuring mission
-            readiness under extreme pressure.
-          </li>
-          <li>
-            <strong>
-              Created a full-scale pre-alert system for aircraft component
-              lifecycle</strong
-            >, reducing manual effort by 80% and the risk of incidents by 95%.
-          </li>
-          <li>
-            <strong>
-              Developed a digital archival system for aircraft logs and
-              records</strong
-            >, reducing documentation time by 35% and improving accessibility
-            and searchability by 70%.
-          </li>
-        </ul>
-        <div class="desig-div highlight">
-          <div>Forex Trading</div>
-          <div>2022-2025</div>
-        </div>
-        <ul>
-          <li>
-            <strong>
-              Built custom MT5 indicators based on various trading
-              strategies</strong
-            >, reducing human error by 80% and improving analysis efficiency by
-            70%.
-          </li>
-          <li>
-            <strong>
-              Optimized several MT5 indicators to meet specific trading
-              requirements</strong
-            >, enhancing trade decision accuracy by 35%.
-          </li>
-        </ul>
-        <div class="desig-div highlight">
-          <div>DevOps (self-directed)</div>
-          <div>2025-present</div>
-        </div>
-        <ul>
-          <li>
-            Curiosity-driven problem solver focused on <strong>automation, reliability, and cloud-native systems.</strong>
-          </li>
-          <li>
-            <strong>Built and automated</strong> cloud infrastructure using Terraform and Kubernetes on AWS, implementing CI/CD pipelines and GitOps workflows to improve deployment reliability and scalability.
-          </li>
-        </ul>
+    <!-- Experience -->
+    <h2>Experience</h2>
+    <div class="container-formatter">
+      <div class="desig-div highlight">
+        <div>Indian Army (Aviation Technician)</div>
+        <div>2014-2022</div>
       </div>
-
-      <!-- Recent Projects -->
-      <h2>Recent Projects</h2>
-      <div class="container-formatter">
-        <ol>
-          <!--- 1st project -->
-          <li>
-            <div class="desig-div highlight">
-              <div>Productionizing a Microservices Application (Reverse-Engineered) | In Progress:</div>
-              <div>2026</div>
-            </div>
-            <ul>
-              <li>
-                Implemented <strong>EBS-backed PostgreSQL and DynamoDB</strong>, ensuring <strong>0 data loss during cluster teardown</strong>
-              </li>
-              <li>
-                <strong>Externalized all application secrets</strong> using AWS Secrets Manager, ESO, and IMDSv2
-              </li>
-              <li>
-                Optimized containers with AL2023-minimal, reducing size by <strong>17%</strong> with full glibc and dnf compatibility
-              </li>
-            </ul>
-          </li>
-
-          <!--- 2nd project -->
-          <li>
-            <div class="desig-div highlight">
-              <div>Reverse engineered Terraform & Created GitOps-Driven CI/CD pipeline from scratch:</div>
-              <div>2026</div>
-            </div>
-            <ul>
-              <li>
-                Re-architected <code><strong>terraform apply</strong></code> into modular provisioning for <strong>dependency-aware deployments</strong>
-              </li>
-              <li>
-                Built end-to-end <strong>CI pipeline from scratch</strong>, reducing manual effort by <strong>~30%</strong>
-              </li>
-              <li>
-                Implemented CD (<strong>ArgoCD + branch strategy</strong>) for auto deployments, reducing release time by <strong>~25%</strong>
-              </li>
-            </ul>
-          </li>
-
-          <!--- last project -->
-          <li>
-            <div class="desig-div highlight">
-              <div>Production-Grade Log Management & Cleanup Automation:</div>
-              <div>2026</div>
-            </div>
-            <ul>
-              <li>
-                Automated log lifecycle (journalctl + custom paths) with <strong>dry-run safety, script locking, dependency checks and cron scheduling</strong> reducing operational overhead by <strong>~35%</strong>
-              </li>
-              <li>
-                Enabled <strong>proactive monitoring & alerts</strong> (disk/inode thresholds, Slack, email)
-              </li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-
-      <!-- Education -->
-      <h2>Education</h2>
       <ul>
         <li>
-          <div class="desig-div">
-            <div>Linux Administration Course</div>
-            <div>Indian Army (2019)</div>
-          </div>
+          <strong>
+            Implemented instant list generation for critical components to
+            maintain aircraft availability</strong>, saving over 10 hours per day during the
+          <code><strong>Pulwama attack</strong></code>.
+          <strong>Commended by Officer Commanding</strong> for ensuring mission
+          readiness under extreme pressure.
         </li>
         <li>
-          <div class="desig-div">
-            <div>Senior Secondary (Class 12)</div>
-            <div>2012</div>
-          </div>
+          <strong>
+            Created a full-scale pre-alert system for aircraft component
+            lifecycle</strong>, reducing manual effort by 80% and the risk of incidents by 95%.
+        </li>
+        <li>
+          <strong>
+            Developed a digital archival system for aircraft logs and
+            records</strong>, reducing documentation time by 35% and improving accessibility
+          and searchability by 70%.
+        </li>
+      </ul>
+      <div class="desig-div highlight">
+        <div>Forex Trading</div>
+        <div>2022-2025</div>
+      </div>
+      <ul>
+        <li>
+          <strong>
+            Built custom MT5 indicators based on various trading
+            strategies</strong>, reducing human error by 80% and improving analysis efficiency by
+          70%.
+        </li>
+        <li>
+          <strong>
+            Optimized several MT5 indicators to meet specific trading
+            requirements</strong>, enhancing trade decision accuracy by 35%.
+        </li>
+      </ul>
+      <div class="desig-div highlight">
+        <div>DevOps (self-directed)</div>
+        <div>2025-present</div>
+      </div>
+      <ul>
+        <li>
+          <strong>Designing and building production-style cloud-native systems</strong> using AWS, Terraform, and
+          Kubernetes.
+        </li>
+        <li>
+          <strong>Focused on automation, reliability, and scalable infrastructure design</strong> through hands-on
+          projects and real-world problem simulation.
         </li>
       </ul>
     </div>
-    <script>
-      function printResume() {
-        document.title = "Sonu_DevOps_Resume";
-        window.print();
-      }
-    </script>
-  </body>
+
+    <!-- Recent Projects -->
+    <h2>Recent Projects</h2>
+    <div class="container-formatter">
+      <ol>
+        <!--- 1st project -->
+        <li>
+          <div class="desig-div highlight">
+            <div>Productionizing a Microservices Application (Reverse-Engineered) | In Progress:</div>
+            <div>2026</div>
+          </div>
+          <ul>
+            <li>
+              Implemented <strong>EBS-backed PostgreSQL and DynamoDB</strong>, ensuring <strong>0 data loss during
+                cluster teardown</strong>
+            </li>
+            <li>
+              <strong>Externalized all application secrets</strong> using AWS Secrets Manager, ESO, and IMDSv2
+            </li>
+            <li>
+              Optimized containers with AL2023-minimal, reducing size by <strong>17%</strong> with full glibc and dnf
+              compatibility
+            </li>
+          </ul>
+        </li>
+
+        <!--- 2nd project -->
+        <li>
+          <div class="desig-div highlight">
+            <div>Reverse-engineered Terraform and built GitOps-Driven CI/CD pipeline from scratch:</div>
+            <div>2026</div>
+          </div>
+          <ul>
+            <li>
+              Re-architected <code><strong>terraform apply</strong></code> into modular provisioning for
+              <strong>dependency-aware deployments</strong>
+            </li>
+            <li>
+              Built end-to-end <strong>CI pipeline from scratch</strong>, reducing manual effort by
+              <strong>~30%</strong>
+            </li>
+            <li>
+              Implemented CD (<strong>ArgoCD + branch strategy</strong>) for auto deployments, reducing release time by
+              <strong>~25%</strong>
+            </li>
+          </ul>
+        </li>
+
+        <!--- last project -->
+        <li>
+          <div class="desig-div highlight">
+            <div>Production-Grade Log Management & Cleanup Automation:</div>
+            <div>2026</div>
+          </div>
+          <ul>
+            <li>
+              Automated log lifecycle (journalctl + custom paths) with <strong>dry-run safety, script locking,
+                dependency checks and cron scheduling</strong> reducing operational overhead by <strong>~35%</strong>
+            </li>
+            <li>
+              Enabled <strong>proactive monitoring & alerts</strong> (disk/inode thresholds, Slack, email)
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Education -->
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <div class="desig-div">
+          <div>Linux Administration Course</div>
+          <div>Indian Army (2019)</div>
+        </div>
+      </li>
+      <li>
+        <div class="desig-div">
+          <div>Senior Secondary (Class 12)</div>
+          <div>2012</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script>
+    function printResume() {
+      document.title = "Sonu_DevOps_Resume";
+      window.print();
+    }
+  </script>
+</body>
+
 </html>
