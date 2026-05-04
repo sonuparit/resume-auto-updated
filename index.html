@@ -10,6 +10,7 @@
     @page {
       size: A4;
       margin: 0;
+      padding: 0;
     }
 
     @media print {
@@ -39,10 +40,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-family: Arial, sans-serif;
+      font-family: Arial, sans-serif, Calibri;
       margin: 20px;
-      line-height: 1.2;
-      color: #333;
+      /* line-height: 1.2; */
+      color: #444;
     }
 
     .resume-container {
@@ -72,19 +73,23 @@
     }
 
     h1 {
-      font-size: 35px;
+      font-size: 24pt;
+      color: #0082c8;
+      /*color: #005b8c;*/
       text-align: center;
     }
 
     h2 {
-      margin-top: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;
       color: #0082c8;
-      border-bottom: 2px solid #0082c8;
-      font-size: 20px;
+      border-bottom: 1px solid #0082c8;
+      font-size: 16pt;
     }
 
     p {
-      margin: 4px 0;
+      margin: 0;
+      font-size: 12pt;
       text-align: justify;
     }
 
@@ -102,16 +107,10 @@
       text-align: justify;
     }
 
-    ul {
-      margin-top: 5px;
-      margin-bottom: 10px;
-      padding-left: 30px;
-    }
-
+    ul,
     ol {
-      margin-top: 5px;
-      margin-bottom: 10px;
-      padding-left: 15px;
+      padding: 1pt 0 2pt 14pt;
+      margin: 0;
     }
 
     .contacts-container {
@@ -120,7 +119,7 @@
     }
 
     .contact {
-      margin: 0px auto 10px auto;
+      margin: 0px auto 5px auto;
     }
 
     .highlight {
@@ -129,6 +128,7 @@
 
     .desig-div {
       display: flex;
+      /* font-size: 14pt; */
       justify-content: space-between;
       gap: 30px;
     }
@@ -205,108 +205,94 @@
     <h1>Sonu</h1>
     <div class="contacts-container">
       <div class="contact">
-        <a href="tel:+918374485176" class="highlight">+91 8374485176</a>
+        <a href="tel:+918374485176" class="">+91 8374485176</a>
         |
-        <a href="mailto:sonu.parit1@gmail.com" class="highlight">sonu.parit1@gmail.com</a>
+        <a href="mailto:sonu.parit1@gmail.com" class="">sonu.parit1@gmail.com</a>
         |
-        <a href="https://linkedin.com/in/sonuparit" target="_blank" class="highlight">linkedin.com/in/sonuparit</a>
+        <a href="https://linkedin.com/in/sonuparit" target="_blank" class="">linkedin.com/in/sonuparit</a>
         |
-        <a href="https://github.com/sonuparit" target="_blank" class="highlight">github.com/sonuparit</a>
+        <a href="https://github.com/sonuparit" target="_blank" class="">github.com/sonuparit</a>
         |
-        <a href="https://sonuparit.github.io/" target="_blank" class="highlight">portfolio</a>
+        <a href="https://sonuparit.github.io/" target="_blank" class="">portfolio</a>
       </div>
     </div>
 
     <!-- Profile Summary -->
     <h2>Profile Summary</h2>
     <p>
-      <strong>DevOps-focused engineer</strong> building production-grade cloud infrastructure using <strong>AWS,
-        Kubernetes, and Terraform.</strong> Strong focus on <strong>reliability, automation, real-world problem solving
-        including secure secrets handling, state management, and GitOps-based deployments.</strong>
+      <strong>DevOps-focused engineer</strong> with hands-on experience in building and managing production-grade,
+      cloud-native applications and infrastructure using <strong>Docker, Kubernetes</strong>, and
+      <strong>Terraform</strong>. Specialized
+      in <strong>AWS</strong> and designing end-to-end pipelines for Infrastructure as code using Terraform and CI/CD
+      using <strong> GitHub
+        Actions</strong>, and <strong>ArgoCD</strong>. Focused on delivering secure, scalable, and highly reliable
+      systems through best practices.
     </p>
 
     <!-- Key Skills -->
-    <h2>Key Skills</h2>
-    <p>
-      Automation and reliability mindset | IaC for cloud provisioning |
-      Application deployment and orchestration | CI/CD pipeline implementation
-      | Scalable application design and containerization | Programming | Cloud
-      infrastructure management on AWS | Monitoring and observability | Linux
-      administration and troubleshooting
-    </p>
-
-    <!-- Tools and Technologies -->
-    <h2>Tools and Technologies</h2>
-    <p>
-      Programming Languages: <strong>Python, JavaScript, C++, MQL5, VB</strong> | Infrastructure as
-      Code: <strong>Terraform</strong> |
-      Cloud Platforms: <strong>AWS</strong> |
-      Containerization and orchestration: <strong>Docker, Kubernetes</strong>
-      | CI/CD: <strong>
-        <!-- Jenkins, GitLab,  -->
-        GitHub Actions, ArgoCD</strong> |
-      Automation: <strong>Bash, Python, VB</strong> |
-      Monitoring: <strong>Prometheus, Grafana</strong>
-      <!--  | Operating Systems: <strong>Linux, Windows</strong> -->
-    </p>
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Containerization & Orchestration:</strong> Docker, Kubernetes</li>
+      <li><strong>CI/CD & GitOps:</strong> GitHub Actions, ArgoCD</li>
+      <li><strong>Infrastructure as Code:</strong> Terraform</li>
+      <li><strong>Cloud Platforms:</strong> AWS</li>
+      <li><strong>Monitoring & Observability:</strong> Prometheus, Grafana</li>
+      <li><strong>Configuration management:</strong> Ansible</li>
+      <li><strong>Programming & Scripting:</strong> Python, Bash, JavaScript, C++, MQL5, VB</li>
+      <li><strong>Operating Systems:</strong> Linux, Windows</li>
+    </ul>
 
     <!-- Experience -->
     <h2>Experience</h2>
     <div class="container-formatter">
       <div class="desig-div highlight">
         <div>Indian Army (Aviation Technician)</div>
-        <div>2013-2022</div>
+        <div>Oct 2013 - Jun 2022</div>
       </div>
       <ul>
         <li>
-          <strong>
-            Implemented instant list generation for critical components to
-            maintain aircraft availability</strong>, saving over 10 hours per day during the
-          <code><strong>Pulwama attack</strong></code>.
+          Implemented instant list generation for critical components to
+          maintain aircraft availability, saving over 10 hours per day during the
+          <code>Pulwama attack</code>.
           <strong>Commended by Officer Commanding</strong> for ensuring mission
-          readiness under extreme pressure.
+          readiness under extreme pressure. Earned the name <strong>automation guy</strong>.
         </li>
         <li>
-          <strong>
-            Created a full-scale pre-alert system for aircraft component
-            lifecycle</strong>, reducing manual effort by 80% and the risk of incidents by 95%.
+          Created a full-scale pre-alert system for aircraft component
+          lifecycle, reducing manual effort by ~80% and the risk of incidents by ~<strong>95%</strong>.
         </li>
         <li>
-          <strong>
-            Developed a digital archival system for aircraft logs and
-            records</strong>, reducing documentation time by 35% and improving accessibility
-          and searchability by 70%.
+          Developed a digital archival system for aircraft logs and
+          records, reducing documentation time by ~35% and improving accessibility
+          and searchability by ~<strong>70%</strong>.
         </li>
       </ul>
       <div class="desig-div highlight">
         <div>Forex Trading</div>
-        <div>2022-2025</div>
+        <div>Aug 2022 - Jul 2025</div>
       </div>
       <ul>
         <li>
-          <strong>
-            Built custom MT5 indicators based on various trading
-            strategies</strong>, reducing human error by 80% and improving analysis efficiency by
-          70%.
+          Built custom MT5 indicators based on various trading
+          strategies, reducing human error by ~80% and improving analysis efficiency by ~<strong>70%</strong>.
         </li>
         <li>
-          <strong>
-            Optimized several MT5 indicators to meet specific trading
-            requirements</strong>, enhancing trade decision accuracy by 35%.
+          Optimized several MT5 indicators to meet specific trading
+          requirements, enhancing trade decision accuracy by ~<strong>35%</strong>.
         </li>
       </ul>
       <div class="desig-div highlight">
         <div>DevOps (self-directed)</div>
-        <div>2025-present</div>
+        <div>Aug 2025 - Present</div>
       </div>
       <ul>
         <li>
-          <strong>Designing and building production-style cloud-native systems</strong> using AWS, Terraform, and
+          <strong>Designing and building</strong> production-style cloud-native systems using AWS, Terraform, and
           Kubernetes.
         </li>
         <li>
-          <strong>Focused on automation, reliability, and scalable infrastructure design</strong> through hands-on
-          projects and real-world problem simulation.
+          Leveraging <strong>AI</strong> to generate and refine scripts, debug configurations, and optimize
+          infrastructure workflows, improving, efficiency and overall engineering productivity by ~<strong>30%</strong>.
         </li>
       </ul>
     </div>
@@ -318,20 +304,27 @@
         <!--- 1st project -->
         <li>
           <div class="desig-div highlight">
-            <div>Productionizing a Microservices Application (Reverse-Engineered) | In Progress:</div>
-            <div>2026</div>
+            <div>Productionizing a Microservices Application (Reverse-Engineered). In Progress:</div>
+            <div>Mar 2026 - Present</div>
           </div>
           <ul>
             <li>
-              Implemented <strong>EBS-backed PostgreSQL and DynamoDB</strong>, ensuring <strong>0 data loss during
-                cluster teardown</strong>
+              Designed and developed <strong>Helm charts</strong> from scratch and deployed applications using Helmfile
+              and ArgoCD, implementing a GitOps workflow for automated, <strong>multi environment</strong> and
+              consistent
+              deployments.
             </li>
             <li>
-              <strong>Externalized all application secrets</strong> using AWS Secrets Manager, ESO, and IMDSv2
+              Implemented persistent <strong>PostgreSQL</strong> and <strong>DynamoDB</strong>, ensuring 0 data loss
+              during cluster teardown.
             </li>
             <li>
-              Optimized containers with AL2023-minimal, reducing size by <strong>17%</strong> with full glibc and dnf
-              compatibility
+              Externalized all application secrets using <strong>AWS Secrets Manager, ESO</strong>, and
+              <strong>IMDSv2</strong>.
+            </li>
+            <li>
+              Optimized containers with AL2023-minimal, with full glibc and dnf
+              compatibility, decreasing size by <strong>17%</strong>
             </li>
           </ul>
         </li>
@@ -339,21 +332,21 @@
         <!--- 2nd project -->
         <li>
           <div class="desig-div highlight">
-            <div>Reverse-engineered Terraform and built GitOps-Driven CI/CD pipeline from scratch:</div>
-            <div>2026</div>
+            <div>Reverse-engineered Terraform and built GitOps-Driven CI/CD pipeline:</div>
+            <div>Feb 2026 - Mar 2026</div>
           </div>
           <ul>
             <li>
-              Re-architected <code><strong>terraform apply</strong></code> into modular provisioning for
-              <strong>dependency-aware deployments</strong>
+              Re-architected "<code>terraform apply</code>" into modular provisioning for
+              dependency-aware deployments.
             </li>
             <li>
-              Built end-to-end <strong>CI pipeline from scratch</strong>, reducing manual effort by
-              <strong>~30%</strong>
+              Built end-to-end CI pipeline (detect → build → tag → authenticate → push to AWS ECR), reducing manual
+              intervention by ~<strong>30%</strong>
             </li>
             <li>
-              Implemented CD (<strong>ArgoCD + branch strategy</strong>) for auto deployments, reducing release time by
-              <strong>~25%</strong>
+              Planned CD (<strong>ArgoCD + branch strategy</strong>) for auto deployments, shortening
+              release time by ~<strong>25%</strong>
             </li>
           </ul>
         </li>
@@ -362,15 +355,18 @@
         <li>
           <div class="desig-div highlight">
             <div>Production-Grade Log Management & Cleanup Automation from scratch:</div>
-            <div>2026</div>
+            <div>Jan 2026 - Feb 2026</div>
           </div>
           <ul>
             <li>
-              Automated log lifecycle (journalctl + custom paths) with <strong>dry-run safety, script locking,
-                dependency checks and cron scheduling</strong> reducing operational overhead by <strong>~35%</strong>
+              Automated log lifecycle management using journalctl and custom log paths, with dry-run safety, script
+              locking, dependency validation, and cron-based scheduling. Reducing operational overhead by
+              ~<strong>35%</strong>
             </li>
             <li>
-              Enabled <strong>proactive monitoring & alerts</strong> (disk/inode thresholds, Slack, email)
+              Integrated monitoring and alerting based on disk and inode usage, for real-time
+              notifications via Slack and email, improving system reliability by
+              ~<strong>30%</strong>.
             </li>
           </ul>
         </li>
@@ -379,26 +375,21 @@
 
     <!-- Education -->
     <h2>Education</h2>
-    <ul>
-      <li>
-        <div class="desig-div">
-          <div>Linux Administration Course</div>
-          <div>Indian Army (2019)</div>
-        </div>
-      </li>
-      <li>
-        <div class="desig-div">
-          <div>BCA (Completed 3 Semesters)</div>
-          <div>Christ College (2012-13)</div>
-        </div>
-      </li>
-      <li>
+    <div class="desig-div highlight">
+      <div>Linux Administration Course (Indian Army)</div>
+      <div>Apr 2019 - Sep 2019</div>
+    </div>
+    <div class="desig-div highlight">
+      <div>BCA, Christ College (Completed 3 Semesters)</div>
+      <div>Jun 2012 - Oct 2013</div>
+    </div>
+    <!-- <li>
         <div class="desig-div">
           <div>Senior Secondary (Class 12)</div>
           <div>2012</div>
         </div>
-      </li>
-    </ul>
+      </li> -->
+    <!-- </ul> -->
   </div>
   <script>
     function printResume() {
